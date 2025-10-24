@@ -40,6 +40,53 @@ import emojiAvatar from './assets/images/emoji_avatar2.png';
 import emojiAvatarHero from './assets/images/emoji_avatar.png';
 import logoUpc from './assets/images/LogoUpc.png';
 import logoIpcna from './assets/images/LogoIpcna.png';
+
+// Importar imágenes de proyectos
+import project2Image1 from './assets/images/projects_and_certificates/project2-image1.jpg';
+import project2Image2 from './assets/images/projects_and_certificates/project2-image2.jpg';
+import project2Image3 from './assets/images/projects_and_certificates/project2-image3.jpg';
+import project2Image4 from './assets/images/projects_and_certificates/project2-image4.jpg';
+import project2Image5 from './assets/images/projects_and_certificates/project2-image5.jpg';
+
+import psy1 from './assets/images/projects_and_certificates/psy1.png';
+import psy2 from './assets/images/projects_and_certificates/psy2.png';
+import psy3 from './assets/images/projects_and_certificates/psy3.png';
+import psy4 from './assets/images/projects_and_certificates/psy4.png';
+import psy5 from './assets/images/projects_and_certificates/psy5.png';
+
+import ave1 from './assets/images/projects_and_certificates/Ave1.png';
+import ave2 from './assets/images/projects_and_certificates/Ave2.png';
+import ave3 from './assets/images/projects_and_certificates/Ave3.png';
+import ave4 from './assets/images/projects_and_certificates/Ave4.png';
+import ave5 from './assets/images/projects_and_certificates/Ave5.png';
+
+import portfol from './assets/images/projects_and_certificates/Portfol.png';
+import portfol1 from './assets/images/projects_and_certificates/Portfol1.png';
+import portfol2 from './assets/images/projects_and_certificates/Portfol2.png';
+import portfol3 from './assets/images/projects_and_certificates/Portfol3.png';
+import portfol4 from './assets/images/projects_and_certificates/Portfol4.png';
+
+import waze1 from './assets/images/projects_and_certificates/Waze1.png';
+import waze2 from './assets/images/projects_and_certificates/Waze2.png';
+import waze3 from './assets/images/projects_and_certificates/waze3.png';
+import waze4 from './assets/images/projects_and_certificates/waze4.png';
+import waze5 from './assets/images/projects_and_certificates/waze5.png';
+
+// Importar imágenes de certificaciones
+import conceptArt from './assets/images/projects_and_certificates/Concept Art for Video Games.jpeg';
+import demandAnalytics from './assets/images/projects_and_certificates/Demand Analytics.jpeg';
+import scrumMaster from './assets/images/projects_and_certificates/IntroducctionScrumMaster.jpeg';
+import inventoryAnalytics from './assets/images/projects_and_certificates/Inventory Analytics.jpeg';
+import pythonEverybody from './assets/images/projects_and_certificates/Programming for Everybody (Getting Started with Python).jpeg';
+import pythonDataStructures from './assets/images/projects_and_certificates/Python Data Structures.jpeg';
+import pythonVisualizing from './assets/images/projects_and_certificates/Retrieving, Processing, and Visualizing Data with Python.jpeg';
+import scalingAgile from './assets/images/projects_and_certificates/Scaling Agile and the Team-of-Teams.jpeg';
+import supplyChain from './assets/images/projects_and_certificates/Supply Chain Analytics Essentials.jpeg';
+import pythonWebData from './assets/images/projects_and_certificates/Using Python to Access Web Data.jpeg';
+
+// Importar logos
+import logo2025 from './assets/images/projects_and_certificates/Logo2025.jpg';
+import logoPsyCare from './assets/images/projects_and_certificates/logoPsyCare.jpeg';
 import TypewriterText from './components/TypewriterText';
 import ParticlesBackground from './components/ParticlesBackground';
 import LeafletMap from './components/LeafletMap';
@@ -2452,7 +2499,7 @@ const App: React.FC = () => {
                   <div className="mb-4 md:mb-6 rounded-lg md:rounded-xl overflow-hidden bg-gradient-to-br from-amber-50 to-orange-100 p-2 md:p-4">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group-la-avenida relative" onClick={() => openProjectGallery('la-avenida')}>
                       <img 
-                        src="/src/assets/images/projects_and_certificates/project2-image1.jpg" 
+                        src={project2Image1} 
                         alt="La Avenida - Cafetería en Huarmey" 
                         className="w-full h-auto object-cover transition-transform duration-300 group-la-avenida-hover:scale-105"
                       />
@@ -2523,7 +2570,7 @@ const App: React.FC = () => {
                   <div className="mb-4 md:mb-6 rounded-lg md:rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 p-2 md:p-4">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group-psycare relative" onClick={() => openProjectGallery('psycare')}>
                       <img 
-                        src="/src/assets/images/projects_and_certificates/psy1.png" 
+                        src={psy1} 
                         alt="PsyCare - Detección de Trastornos Psicológicos" 
                         className="w-full h-auto object-cover transition-transform duration-300 group-psycare-hover:scale-105"
                       />
@@ -2595,7 +2642,7 @@ const App: React.FC = () => {
                   <div className="mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-green-50 to-emerald-100 p-4">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group-la-avenida-react relative" onClick={() => openProjectGallery('la-avenida-react')}>
                       <img 
-                        src="/src/assets/images/projects_and_certificates/Ave1.png" 
+                        src={ave1} 
                         alt="La Avenida React - Cafetería en Huarmey" 
                         className="w-full h-auto object-cover transition-transform duration-300 group-la-avenida-react-hover:scale-105"
                       />
@@ -2674,7 +2721,7 @@ const App: React.FC = () => {
                   <div className="mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-purple-50 to-pink-100 p-4">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group-portfolio relative" onClick={() => openProjectGallery('portfolio')}>
                       <img 
-                        src="/src/assets/images/projects_and_certificates/Portfol.png" 
+                        src={portfol} 
                         alt="Portfolio Programador" 
                         className="w-full h-auto object-cover transition-transform duration-300 group-portfolio-hover:scale-105"
                       />
@@ -2753,7 +2800,7 @@ const App: React.FC = () => {
                   <div className="mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-orange-50 to-red-100 p-4">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group-waze relative" onClick={() => openProjectGallery('waze')}>
                       <img 
-                        src="/src/assets/images/projects_and_certificates/Waze1.png" 
+                        src={waze1} 
                         alt="Waze Aéreo - Sistema de Optimización de Rutas" 
                         className="w-full h-auto object-cover transition-transform duration-300 group-waze-hover:scale-105"
                       />
@@ -2861,7 +2908,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Concept Art for Video Games.jpeg" 
+                      src={conceptArt} 
                       alt="Concept Art for Video Games Certificate" 
                       className="w-full h-48 object-cover group-cert-1-hover:scale-110 transition-transform duration-500"
                     />
@@ -2889,7 +2936,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Demand Analytics.jpeg" 
+                      src={demandAnalytics} 
                       alt="Demand Analytics Certificate" 
                       className="w-full h-48 object-cover group-cert-2-hover:scale-110 transition-transform duration-500"
                     />
@@ -2917,7 +2964,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/IntroducctionScrumMaster.jpeg" 
+                      src={scrumMaster} 
                       alt="Introduction Scrum Master Certificate" 
                       className="w-full h-48 object-cover group-cert-3-hover:scale-110 transition-transform duration-500"
                     />
@@ -2945,7 +2992,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Inventory Analytics.jpeg" 
+                      src={inventoryAnalytics} 
                       alt="Inventory Analytics Certificate" 
                       className="w-full h-48 object-cover group-cert-4-hover:scale-110 transition-transform duration-500"
                     />
@@ -2973,7 +3020,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Programming for Everybody (Getting Started with Python).jpeg" 
+                      src={pythonEverybody} 
                       alt="Programming for Everybody Certificate" 
                       className="w-full h-48 object-cover group-cert-5-hover:scale-110 transition-transform duration-500"
                     />
@@ -3001,7 +3048,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Python Data Structures.jpeg" 
+                      src={pythonDataStructures} 
                       alt="Python Data Structures Certificate" 
                       className="w-full h-48 object-cover group-cert-6-hover:scale-110 transition-transform duration-500"
                     />
@@ -3029,7 +3076,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Retrieving, Processing, and Visualizing Data with Python.jpeg" 
+                      src={pythonVisualizing} 
                       alt="Retrieving, Processing, and Visualizing Data Certificate" 
                       className="w-full h-48 object-cover group-cert-7-hover:scale-110 transition-transform duration-500"
                     />
@@ -3057,7 +3104,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Scaling Agile and the Team-of-Teams.jpeg" 
+                      src={scalingAgile} 
                       alt="Scaling Agile Certificate" 
                       className="w-full h-48 object-cover group-cert-8-hover:scale-110 transition-transform duration-500"
                     />
@@ -3085,7 +3132,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Supply Chain Analytics Essentials.jpeg" 
+                      src={supplyChain} 
                       alt="Supply Chain Analytics Certificate" 
                       className="w-full h-48 object-cover group-cert-9-hover:scale-110 transition-transform duration-500"
                     />
@@ -3113,7 +3160,7 @@ const App: React.FC = () => {
                   
                   <div className="relative mb-4 overflow-hidden rounded-2xl">
                     <img 
-                      src="/src/assets/images/projects_and_certificates/Using Python to Access Web Data.jpeg" 
+                      src={pythonWebData} 
                       alt="Using Python to Access Web Data Certificate" 
                       className="w-full h-48 object-cover group-cert-10-hover:scale-110 transition-transform duration-500"
                     />
@@ -3157,13 +3204,13 @@ const App: React.FC = () => {
                   <div className="w-16 h-16 rounded-full overflow-hidden">
                     {selectedProject === 'la-avenida' ? (
                       <img 
-                        src="/src/assets/images/projects_and_certificates/Logo2025.jpg" 
+                        src={logo2025} 
                         alt="La Avenida Logo" 
                         className="w-full h-full object-cover rounded-full"
                       />
                     ) : selectedProject === 'la-avenida-react' ? (
                       <img 
-                        src="/src/assets/images/projects_and_certificates/Logo2025.jpg" 
+                        src={logo2025} 
                         alt="La Avenida React Logo" 
                         className="w-full h-full object-cover rounded-full"
                       />
@@ -3175,7 +3222,7 @@ const App: React.FC = () => {
                       />
                     ) : (
                       <img 
-                        src="/src/assets/images/projects_and_certificates/logoPsyCare.jpeg" 
+                        src={logoPsyCare} 
                         alt="PsyCare Logo" 
                         className="w-full h-full object-cover rounded-full"
                       />
@@ -3200,13 +3247,17 @@ const App: React.FC = () => {
                 <div className="relative mb-6">
                   <motion.img
                     key={currentImageIndex}
-                    src={`/src/assets/images/projects_and_certificates/${
-                      selectedProject === 'la-avenida' ? `project2-image${currentImageIndex + 1}.jpg` : 
-                      selectedProject === 'la-avenida-react' ? `Ave${currentImageIndex + 1}.png` : 
-                      selectedProject === 'portfolio' ? `Portfol${currentImageIndex === 0 ? '' : currentImageIndex}.png` :
-                      selectedProject === 'waze' ? `Waze${currentImageIndex + 1}.png` :
-                      `psy${currentImageIndex + 1}.png`
-                    }`}
+                    src={
+                      selectedProject === 'la-avenida' ? 
+                        [project2Image1, project2Image2, project2Image3, project2Image4, project2Image5][currentImageIndex] :
+                      selectedProject === 'la-avenida-react' ? 
+                        [ave1, ave2, ave3, ave4, ave5][currentImageIndex] :
+                      selectedProject === 'portfolio' ? 
+                        [portfol, portfol1, portfol2, portfol3, portfol4][currentImageIndex] :
+                      selectedProject === 'waze' ? 
+                        [waze1, waze2, waze3, waze4, waze5][currentImageIndex] :
+                        [psy1, psy2, psy3, psy4, psy5][currentImageIndex]
+                    }
                     alt={`${
                       selectedProject === 'la-avenida' ? 'La Avenida' : 
                       selectedProject === 'la-avenida-react' ? 'La Avenida React' : 
