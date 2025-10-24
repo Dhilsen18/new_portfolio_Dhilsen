@@ -2741,6 +2741,88 @@ const App: React.FC = () => {
                   </div>
                 </motion.div>
 
+                {/* Proyecto 5: Waze Aéreo */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  viewport={{ once: true }}
+                  className="bg-black/30 backdrop-blur-lg border border-white/20 rounded-2xl p-6 hover:bg-black/40 hover:border-white/30 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20 hover:-translate-y-2 group"
+                >
+                  {/* Screenshot del proyecto */}
+                  <div className="mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-orange-50 to-red-100 p-4">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group-waze relative" onClick={() => openProjectGallery('waze')}>
+                      <img 
+                        src="/src/assets/images/projects_and_certificates/Waze1.png" 
+                        alt="Waze Aéreo - Sistema de Optimización de Rutas" 
+                        className="w-full h-auto object-cover transition-transform duration-300 group-waze-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-waze-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-waze-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm rounded-full p-3">
+                          <FaEye className="text-gray-800 text-xl" />
+                        </div>
+                      </div>
+                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium text-gray-800">
+                        5 imágenes
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Información del proyecto */}
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors duration-300">
+                      Waze Aéreo - Sistema de Optimización de Rutas
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Sistema avanzado de optimización de rutas aéreas desarrollado con React y JavaScript. Utiliza algoritmos de optimización para planificar rutas eficientes considerando múltiples factores como tiempo de vuelo, probabilidades de retraso, tiempos de conexión y capacidad de aeropuertos. Implementado con una dataset real de aerolíneas de Estados Unidos.
+                    </p>
+                    
+                    {/* Tags de tecnologías */}
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 text-blue-300 rounded-lg text-sm font-medium">
+                        React
+                      </span>
+                      <span className="px-3 py-1 bg-yellow-500/20 backdrop-blur-sm border border-yellow-400/30 text-yellow-300 rounded-lg text-sm font-medium">
+                        JavaScript
+                      </span>
+                      <span className="px-3 py-1 bg-purple-500/20 backdrop-blur-sm border border-purple-400/30 text-purple-300 rounded-lg text-sm font-medium">
+                        Bootstrap
+                      </span>
+                      <span className="px-3 py-1 bg-green-500/20 backdrop-blur-sm border border-green-400/30 text-green-300 rounded-lg text-sm font-medium">
+                        Python
+                      </span>
+                      <span className="px-3 py-1 bg-orange-500/20 backdrop-blur-sm border border-orange-400/30 text-orange-300 rounded-lg text-sm font-medium">
+                        HTML
+                      </span>
+                      <span className="px-3 py-1 bg-blue-600/20 backdrop-blur-sm border border-blue-600/30 text-blue-400 rounded-lg text-sm font-medium">
+                        JSON
+                      </span>
+                    </div>
+
+                    {/* Enlaces */}
+                    <div className="flex space-x-4 pt-4">
+                      <a
+                        href="https://github.com/Dhilsen18/Waze_Aereo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                      >
+                        <FaGithub className="text-lg" />
+                        <span>Code</span>
+                      </a>
+                      <a
+                        href="https://github.com/Dhilsen18/Waze_Aereo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors duration-300"
+                      >
+                        <FaExternalLinkAlt className="text-lg" />
+                        <span>Live Demo</span>
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
+
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -3104,6 +3186,7 @@ const App: React.FC = () => {
                       {selectedProject === 'la-avenida' ? 'La Avenida - Cafetería' : 
                        selectedProject === 'la-avenida-react' ? 'La Avenida - Cafetería (New)' : 
                        selectedProject === 'portfolio' ? 'Portfolio Programador' :
+                       selectedProject === 'waze' ? 'Waze Aéreo - Sistema de Optimización de Rutas' :
                        'PsyCare - Detección de Trastornos Psicológicos'}
                     </h3>
                     <p className="text-gray-300">Galería de imágenes del proyecto</p>
@@ -3121,12 +3204,14 @@ const App: React.FC = () => {
                       selectedProject === 'la-avenida' ? `project2-image${currentImageIndex + 1}.jpg` : 
                       selectedProject === 'la-avenida-react' ? `Ave${currentImageIndex + 1}.png` : 
                       selectedProject === 'portfolio' ? `Portfol${currentImageIndex === 0 ? '' : currentImageIndex}.png` :
+                      selectedProject === 'waze' ? `Waze${currentImageIndex + 1}.png` :
                       `psy${currentImageIndex + 1}.png`
                     }`}
                     alt={`${
                       selectedProject === 'la-avenida' ? 'La Avenida' : 
                       selectedProject === 'la-avenida-react' ? 'La Avenida React' : 
                       selectedProject === 'portfolio' ? 'Portfolio Programador' :
+                      selectedProject === 'waze' ? 'Waze Aéreo' :
                       'PsyCare'
                     } - Imagen ${currentImageIndex + 1}`}
                     className="w-full h-auto max-h-[60vh] object-contain rounded-2xl shadow-2xl"
@@ -3174,6 +3259,8 @@ const App: React.FC = () => {
                     Captura de pantalla del proyecto {
                       selectedProject === 'la-avenida' ? 'La Avenida' : 
                       selectedProject === 'la-avenida-react' ? 'La Avenida React' : 
+                      selectedProject === 'portfolio' ? 'Portfolio Programador' :
+                      selectedProject === 'waze' ? 'Waze Aéreo' :
                       'PsyCare'
                     }
                   </p>
