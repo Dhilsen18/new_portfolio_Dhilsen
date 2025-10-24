@@ -1,0 +1,343 @@
+@import "tailwindcss";
+
+/* Animaciones personalizadas para el fondo */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(20px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-20px);
+  }
+  75% {
+    transform: translateX(-20px) translateY(-5px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Animación de máquina de escribir profesional */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-color: transparent;
+  }
+  51%, 100% {
+    border-color: #60a5fa;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(96, 165, 250, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.6), 0 0 30px rgba(96, 165, 250, 0.4);
+  }
+}
+
+/* Animaciones de scroll infinito */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-drift {
+  animation: drift 8s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 2.5s steps(35, end);
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.text-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Tipografías profesionales */
+.font-display {
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-body {
+  font-family: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Estilos para animación 3D de cartas */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Grupos específicos para proyectos */
+.group-la-avenida:hover .group-la-avenida-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.group-la-avenida:hover .group-la-avenida-hover\:bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.group-la-avenida:hover .group-la-avenida-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-psycare:hover .group-psycare-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.group-psycare:hover .group-psycare-hover\:bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.group-psycare:hover .group-psycare-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-la-avenida-react:hover .group-la-avenida-react-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.group-la-avenida-react:hover .group-la-avenida-react-hover\:bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.group-la-avenida-react:hover .group-la-avenida-react-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-portfolio:hover .group-portfolio-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.group-portfolio:hover .group-portfolio-hover\:bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.group-portfolio:hover .group-portfolio-hover\:opacity-100 {
+  opacity: 1;
+}
+
+/* Grupos específicos para certificados */
+.group-cert-1:hover .group-cert-1-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-1:hover .group-cert-1-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-2:hover .group-cert-2-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-2:hover .group-cert-2-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-3:hover .group-cert-3-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-3:hover .group-cert-3-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-4:hover .group-cert-4-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-4:hover .group-cert-4-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-5:hover .group-cert-5-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-5:hover .group-cert-5-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-6:hover .group-cert-6-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-6:hover .group-cert-6-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-7:hover .group-cert-7-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-7:hover .group-cert-7-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-8:hover .group-cert-8-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-8:hover .group-cert-8-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-9:hover .group-cert-9-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-9:hover .group-cert-9-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-cert-10:hover .group-cert-10-hover\:scale-110 {
+  transform: scale(1.10);
+}
+
+.group-cert-10:hover .group-cert-10-hover\:opacity-100 {
+  opacity: 1;
+}
+
+/* Estilos para Leaflet Map - Forzar que abarque todo el contenedor */
+#map-container .leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 1.5rem !important;
+}
+
+#map-container .leaflet-tile-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#map-container .leaflet-map-pane {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#map-container .leaflet-tile {
+  margin: 0 !important;
+  padding: 0 !important;
+}

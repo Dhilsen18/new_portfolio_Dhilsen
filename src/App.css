@@ -1,0 +1,47 @@
+/* App.css - Estilos específicos de la aplicación */
+
+/* Animación flotante suave para el emoji */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Animación de brillo pulsante */
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.6));
+  }
+}
+
+/* Clase para animación flotante */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Clase para brillo pulsante */
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Asegurar que las animaciones funcionen */
+img[style*="animation"] {
+  animation-play-state: running !important;
+}
+
+/* Estilos para el marcador personalizado de la bandera */
+.custom-marker {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.custom-marker:hover {
+  transform: scale(1.1);
+}
